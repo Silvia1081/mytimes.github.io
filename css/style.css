@@ -1,3 +1,6 @@
+body {
+font-family: Verdana;
+}
 
 .container {
 font-family: Verdana;
@@ -6,7 +9,6 @@ font-weight: bold;
 display: flex;
 align-items: center;
 border-bottom: 1px solid black;
-width: 100%;
 padding-bottom: 6px;
 }
 
@@ -31,16 +33,32 @@ color: black;
 
 a:hover {
 color: MediumAquaMarine;
-
-.main-content {
-display: flex;
-flex-direction: column;
 }
 
-.items {
+.flex-container01,
+.flex-container02 {
+font-family: Georgia;
+font-size: 17px;
+color: black;
+}
+
+.flex-container01 {
+border: 1px solid black;
+display: inline-flex
+width: 150px;
+margin-top: 10px;
+flex-direction: column;
+flex-grow: 2;
+}
+
+div {
 border: 1px solid black;
 }
 
-h3 {
-color: Aquamarine;
+.flex-container02 {
+border: 1px solid black;
+display: inline-flex;
+flex-direction: column;
+flex-grow: 1;
+flex-wrap: wrap;
 }
