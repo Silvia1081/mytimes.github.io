@@ -1,8 +1,4 @@
-body {
-font-family: Verdana;
-}
-
-.container {
+.container-header {
 font-family: Verdana;
 font-size: 14px;
 font-weight: bold;
@@ -10,6 +6,7 @@ display: flex;
 align-items: center;
 border-bottom: 1px solid black;
 padding-bottom: 6px;
+flex-wrap: wrap;
 }
 
 .title {
@@ -35,30 +32,36 @@ a:hover {
 color: MediumAquaMarine;
 }
 
-.flex-container01,
-.flex-container02 {
-font-family: Georgia;
-font-size: 17px;
-color: black;
-}
 
-.flex-container01 {
-border: 1px solid black;
-display: inline-flex
-width: 150px;
+.container-content {
+font-family: "Times New Roman", serif;
+display: flex;
 margin-top: 10px;
-flex-direction: column;
-flex-grow: 2;
+align-items: stretch;
+justify-content: space-around;
 }
 
-div {
-border: 1px solid black;
-}
-
-.flex-container02 {
-border: 1px solid black;
-display: inline-flex;
-flex-direction: column;
+#column.large {
+width: 630px;
+display: flex;
 flex-grow: 1;
-flex-wrap: wrap;
+}
+
+#column.medium {
+width: 300px;
+display: flex;
+flex-grow: 1;
+}
+
+#column.small {
+width: 240px;
+display: flex;
+flex-grow: 1;
+}
+
+
+#main {
+background-image: url(img-story-main.png);
+background-size: contain;
+background-repeat: no-repeat;
 }
